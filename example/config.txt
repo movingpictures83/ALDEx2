@@ -1,0 +1,2 @@
+Prefix plugins/ALDEx2/example/
+Plugin ALDEx2 inputfile parameters.txt outputfile output

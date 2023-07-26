@@ -1,0 +1,5 @@
+csvfile	abund.csv
+group1	Control
+count1	30
+group2	ADHD
+count2	28
