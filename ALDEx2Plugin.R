@@ -6,11 +6,9 @@ source("RPluMA.R")
 source("RIO.R")
 
 input <- function(inputfile) {
-   print("HI")
    pfix <- prefix()
    parameters <- readParameters(inputfile)
    csvfile <- paste(pfix, parameters["csvfile", 2], sep="/")
-   print(csvfile)
    group1 <- parameters["group1", 2]
    count1 <- as.integer(parameters["count1", 2])
    group2 <- parameters["group2", 2]
@@ -24,7 +22,6 @@ run <- function() {
 }
 
 output <- function(outputfile) {
-   print("OUTPUT")
    write.csv(x, paste(outputfile, ".x.csv", sep=""))
    write.csv(aldex.effect(aldex.clr(mydata, conds)), paste(outputfile, ".effect.csv", sep=""))
 }
